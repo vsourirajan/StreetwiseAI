@@ -7,8 +7,6 @@ image = (
     .pip_install(
         [
             "modal>=0.62.0",
-            "osmnx==1.7.1",
-            "networkx>=3.2.1",
             "geopandas>=0.14.3",
             "shapely>=2.0.3",
             "pyogrio>=0.7.2",
@@ -33,7 +31,6 @@ app = modal.App("citybrain-ingest")
 def ingest_data():
     from citybrain.ingest.zoning_text import download_zoning_text, chunk_and_write_embeddings_corpus
     from citybrain.ingest.zoning_shapes import download_zoning_shapes
-    # from citybrain.ingest.osm_network import download_osm_drive_network
     from citybrain.ingest.traffic_counts import download_traffic_counts
     # from citybrain.ingest.demographics import download_demographics
 
@@ -45,14 +42,13 @@ def ingest_data():
     print("Downloading zoning shapes...")
     download_zoning_shapes()
 
-    print("Downloading OSM network...")
-    download_osm_drive_network()
+
 
     print("Downloading traffic counts...")
     download_traffic_counts()
 
     print("Downloading demographics...")
-    download_demographics()
+    # download_demographics()1
 
     print("Ingestion complete.")
 

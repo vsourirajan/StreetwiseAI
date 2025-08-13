@@ -10,7 +10,6 @@ sys.path.insert(0, str(project_root))
 
 from citybrain.ingest.zoning_text import download_zoning_text, chunk_and_write_embeddings_corpus
 from citybrain.ingest.zoning_shapes import download_zoning_shapes
-# from citybrain.ingest.osm_network import download_osm_drive_network
 from citybrain.ingest.traffic_counts import download_traffic_counts
 # from citybrain.ingest.demographics import download_demographics
 
@@ -90,13 +89,7 @@ def main():
         logger.info("-" * 40)
         run_with_logging(download_zoning_shapes, "Zoning shapes download", logger)
         
-        # Step 4: OSM Network (commented out)
-        # logger.info("\n" + "-" * 40)
-        # logger.info("STEP 4: OpenStreetMap Road Network")
-        # logger.info("-" * 40)
-        # run_with_logging(download_osm_drive_network, "OSM network download", logger)
-        
-        # Step 5: Traffic Counts
+        # Step 4: Traffic Counts
         logger.info("\n" + "-" * 40)
         logger.info("STEP 4: NYC DOT Traffic Counts")
         logger.info("-" * 40)
