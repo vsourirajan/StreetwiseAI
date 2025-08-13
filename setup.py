@@ -1,0 +1,26 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="citybrain",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "osmnx==1.7.1",
+        "networkx>=3.2.1",
+        "geopandas>=0.14.3",
+        "shapely>=2.0.3",
+        "pyogrio>=0.7.2",
+        "pandas>=2.2.2",
+        "requests>=2.32.3",
+        "beautifulsoup4>=4.12.3",
+        "tiktoken>=0.7.0",
+        "openai>=1.40.0",
+        "pinecone-client>=4.1.2",
+        "python-dotenv>=1.0.1",
+        "folium>=0.16.0",
+        "rapidfuzz>=3.9.6",
+        "pdfminer.six>=20240706",
+        "orjson>=3.10.7",
+    ],
+    python_requires=">=3.9",
+) 
