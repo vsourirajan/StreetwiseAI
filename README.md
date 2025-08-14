@@ -1,4 +1,4 @@
-# StreetwiseAI
+# CityBrain
 
 Minimal scaffolding for the "City Brain" NYC urban planning simulator.
 
