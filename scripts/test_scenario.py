@@ -86,7 +86,7 @@ def main():
         print(f"Error building scenario packet: {e}")
         sys.exit(1)
 
-    print(summarize(packet))
+    # print(summarize(packet))
 
     if args.out:
         out_path = Path(args.out)

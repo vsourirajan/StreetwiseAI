@@ -1,6 +1,4 @@
 modal>=0.62.0
-osmnx==1.7.1
-networkx>=3.2.1
 geopandas>=0.14.3
 shapely>=2.0.3
 pyogrio>=0.7.2

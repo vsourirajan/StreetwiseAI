@@ -5,7 +5,7 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
-        "osmnx==1.7.1",
+
         "networkx>=3.2.1",
         "geopandas>=0.14.3",
         "shapely>=2.0.3",
